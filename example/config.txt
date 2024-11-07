@@ -1,0 +1,2 @@
+Prefix plugins/CoveragePlot/example/
+Plugin CoveragePlot inputfile Annotate.rds outputfile Annotate.coverage.pdf

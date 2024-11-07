@@ -1,0 +1,27 @@
+## ---- echo = FALSE, results = 'hide'---------------------------------------
+library(knitr)
+opts_chunk$set(error = FALSE)
+
+## ----style, echo = FALSE, results = 'asis'---------------------------------
+##BiocStyle::markdown()
+
+## ---- message = FALSE------------------------------------------------------
+library(SGSeq)
+
+
+input <- function(inputfile) {
+#   sgfc_ucsc <<- readRDS(inputfile)
+   sgfc_pred_pred2 <<- readRDS(inputfile)
+}
+
+run <- function() {}
+
+output <- function(outputfile) {
+## ----figure-1, fig.width=4.5, fig.height=4.5-------------------------------
+pdf(outputfile)
+for (j in 1:4) {
+  plotCoverage(sgfc_pred_pred2[, j], geneID = 1, toscale = "none")
+}
+
+}
+
