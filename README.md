@@ -1,0 +1,2 @@
+# CoveragePlot
+Plot read coverage
